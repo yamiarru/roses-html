@@ -1,5 +1,5 @@
 # ROSES
-# Github Pages: https://yamiarru.github.io/roses-html/root/index.html
+ Github Pages: https://yamiarru.github.io/roses-html/
 
 ## REGISTRO DE CAMBIOS
 
