@@ -1,0 +1,149 @@
+/* Styles */
+body {
+    padding-top: 56px; 
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #fce4ec; 
+}
+
+a {
+    color: #ec407a; 
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #d81b60; 
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #c2185b; 
+}
+
+.navbar-brand {
+    color: #000000; 
+}
+
+.navbar-brand:hover {
+    color: #ec407a; 
+}
+
+.navbar-nav .nav-link {
+    color: #000000; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8bbd0; 
+}
+
+/* Carousel */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(70%); 
+}
+
+/* Section Titles */
+.section-title {
+    margin-bottom: 40px;
+    color: #c2185b; 
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* About Us Section */
+#about-us {
+    background-color: #ffffff; 
+    padding: 40px 0;
+    border-top: 1px solid #f8bbd0; 
+}
+
+#about-us p {
+    line-height: 1.6;
+    color: #333; 
+}
+
+/* Contact Section */
+#contact {
+    background-color: #ffffff; 
+    padding: 40px 0;
+    border-top: 1px solid #f8bbd0; 
+}
+
+.form-label {
+    color: #c2185b; 
+}
+
+.form-control {
+    border-radius: 0.25rem;
+    border: 1px solid #ec407a; 
+}
+
+.btn-primary {
+    background-color: #ec407a; 
+    border-color: #ec407a;
+}
+
+.btn-primary:hover {
+    background-color: #d81b60; 
+    border-color: #d81b60;
+}
+
+/* Shop Section */
+#features {
+    background-color: #ffffff; 
+    padding: 40px 0;
+    border-top: 1px solid #f8bbd0; 
+}
+
+.card {
+    border: 1px solid #ec407a; 
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.card-title {
+    color: #c2185b; 
+    font-size: 1.25rem;
+}
+
+.card-text {
+    color: #333; 
+}
+
+/* Footer */
+footer {
+    background-color: #c2185b; 
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #000000;
+}
+
+footer a:hover {
+    color: #f8bbd0; 
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+}
+.image-container img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+}
