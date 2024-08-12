@@ -1,0 +1,263 @@
+// VARIABLES
+$primary-color: #ec407a;
+$secondary-color: #c2185b;
+$tertiary-color: #d81b60;
+$background-color: #fce4ec;
+$text-color: #333;
+$light-background: #ffffff;
+$border-color: #f8bbd0;
+$navbar-text-color: #000000;
+$carousel-height: 200px;
+
+// MIXINS
+@mixin transition($property, $duration) {
+  transition: $property $duration;
+}
+
+// EXTENDABLE CLASSES
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// GLOBAL STYLES
+body {
+  padding-top: 56px;
+  font-family: 'Arial', sans-serif;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: $tertiary-color;
+  }
+}
+
+// NAVBAR
+.container-navbar {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  @extend %flex-center;
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  @extend %flex-center;
+  background-color: $background-color;
+
+  .navbar-brand {
+    color: $primary-color;
+    margin-right: auto;
+
+    &:hover {
+      color: $tertiary-color;
+    }
+  }
+
+  .navbar-toggler {
+    margin-left: auto;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    @extend %flex-center;
+
+    .nav-link {
+      color: $navbar-text-color;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+// CARRUSEL
+.carousel-item {
+  img {
+    height: $carousel-height;
+    object-fit: cover;
+    filter: brightness(70%);
+    @include transition(filter, 0.3s);
+  }
+}
+
+// SECTIONS
+.section-title {
+  margin-bottom: 40px;
+  color: $secondary-color;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+// ABOUT US
+#about-us, #contact, #features {
+  background-color: $light-background;
+  padding: 40px 0;
+  border-top: 1px solid $border-color;
+
+  p {
+    line-height: 1.6;
+    color: $text-color;
+  }
+}
+
+// CONTACT FORM
+#contact {
+  .form-label {
+    color: $secondary-color;
+  }
+
+  .form-control {
+    border-radius: 0.25rem;
+    border: 1px solid $primary-color;
+  }
+
+  .btn-primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    @include transition(background-color, 0.3s);
+
+    &:hover {
+      background-color: $tertiary-color;
+      border-color: $tertiary-color;
+    }
+  }
+}
+
+// SHOP FEATURES
+#features {
+  .card {
+    border: 1px solid $primary-color;
+    border-radius: 0.25rem;
+    overflow: hidden;
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 1.25rem;
+    }
+
+    .card-title {
+      color: $secondary-color;
+      font-size: 1.25rem;
+    }
+
+    .card-text {
+      color: $text-color;
+    }
+  }
+}
+
+// FOOTER
+footer {
+  background-color: $secondary-color;
+  color: $navbar-text-color;
+  padding: 20px 0;
+  text-align: center;
+
+  a {
+    color: $navbar-text-color;
+
+    &:hover {
+      color: $light-background;
+    }
+  }
+}
+
+// IMAGE CONTAINER
+.image-container {
+  @extend %flex-center;
+  margin-top: 20px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+// RESPONSIVE DESIGN
+@media (max-width: 1200px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .carousel-item img {
+    height: 350px;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .carousel-item img {
+    height: 300px;
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 0;
+  }
+
+  .navbar .navbar-brand {
+    font-size: 0.875rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.75rem;
+  }
+
+  .carousel-item img {
+    height: 250px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .card-img-top {
+    height: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.25rem;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .btn-primary {
+    font-size: 0.875rem;
+  }
+
+  .form-label {
+    font-size: 0.875rem;
+  }
+}
