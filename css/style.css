@@ -1,0 +1,35 @@
+/* Transición de página */
+.page-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1000;
+    transition: transform 0.5s ease;
+    transform: translateX(100%);
+  }
+  
+  .page-transition.active {
+    transform: translateX(0);
+  }
+  
+  /* Otros estilos como el de neon-text o el background */
+  body {
+    background: linear-gradient(to bottom, #fce4ec, #ffffff);
+  }
+  
+  .neon-text {
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 0 0 5px #f850a4, 0 0 10px #f850a4, 0 0 15px #f850a4,
+      0 0 20px #f850a4, 0 0 25px #f850a4, 0 0 30px #f850a4, 0 0 35px #f850a4;
+    transition: text-shadow 0.3s ease-in-out;
+  }
+  
+  .neon-text:hover {
+    text-shadow: 0 0 10px #ff0081, 0 0 20px #ff0081, 0 0 30px #ff0081,
+      0 0 40px #ff0081, 0 0 50px #ff0081, 0 0 60px #ff0081, 0 0 70px #ff0081;
+  }
+  
