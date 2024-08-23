@@ -3,6 +3,10 @@
 
 ## REGISTRO DE CAMBIOS
 
+### VERSION 3.0.0 (22/08/2024)
+- **Nuevas Características**
+
+
 ### VERSION 2.0.0 (12/08/2024)
 - **Nuevas Características**
     -Se agregan animaciones para títulos, imágenes y logo.
