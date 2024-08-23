@@ -1,11 +1,15 @@
 # ROSES
  Github Pages: https://yamiarru.github.io/roses-html/
+ URL: http://roses.great-site.net/ 
 
 ## REGISTRO DE CAMBIOS
 
 ### VERSION 3.0.0 (22/08/2024)
 - **Nuevas Características**
-
+    -Se agregan nuevas animaciones.
+    -Se agregan imagénes tempalte.
+    -Se agregan botones de compra.
+    -Se agrega botón "cart" en la sección "Shop".
 
 ### VERSION 2.0.0 (12/08/2024)
 - **Nuevas Características**
